@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    margin:0;
+}
+
+.conteudo{
+    background-color: white;
+    box-shadow: inset 0 0 3px 3px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-top: 100px; 
+    padding: 10px;
+    border-radius: 15px;
+    width: 1000px;
+    height: 750px;
+    
+
+}
+
+
+.amarelo{
+border: solid 4px yellow;
+box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.2);
+border-top-left-radius: 15px;
+width: 230px;
+height: 740px;
+float: left;
+}
+
+.amarelo h2{
+    text-align: center;
+}
+
+.amarelo p{
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.vermelho{
+border: solid 4px red;
+border-top-right-radius: 15px;
+box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.2);
+width: 700px;
+height: 200px;
+padding-left: 50px;
+text-align: center;
+float: right;
+margin-bottom: 10px;
+}
+
+.vermelho h2{
+    text-align: left;
+}
+
+.clientes{
+    float: left;
+    border: solid 4px pink;
+    width:170px;
+    margin-left: 10px;
+    margin-right:5%;
+}
+
+
+.grafico1{
+    width: 430px;
+    border: solid 4px orange;
+    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    height:250px;
+    margin-left: 5px;
+    margin-right: 10px;
+    float: left;
+    background-image: url(Grafico-de-variacao.png);
+    background-size:cover;
+}
+
+.grafico2{
+    width: 300px;
+    border: solid 4px purple;
+    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    height:250px;
+    float: left;
+    background-image: url(grafico_porcentagem.png);
+    background-size: cover;
+}
+
+.verde{
+    width: 430px;
+    border: solid 4px greenyellow;
+    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    height:250px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top:10px;
+    float: left;
+}
+
+.avaliacoes{
+    width: 300px;
+    border: solid 4px purple;
+    box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.2);
+    height:250px;
+    float: left;
+    background-image: url(avaliacoes.jpg);
+    background-size: cover;
+    margin-top: 10px;
+}
+
+</style>
+<body>
+    <div class="conteudo">
+        <div class="amarelo">
+            <h2>Menu</h2>
+            <p>Home</p>
+            <p> Lista de Clientes </p>
+            <p> Dados </p>
+            <p>Sair</p>
+        </div>
+
+        <div class="vermelho">
+            <h2>CLIENTES</h2>
+            <div class="clientes">
+            <p> Clientes Cadastrados</p>
+            </div>
+            <div class="clientes">
+            <p> Clientes Ativos</p>
+            </div>
+            <div class="clientes">
+            <p> Clientes Não Ativos</p>
+            </div>
+        </div>
+        
+            <div class="grafico1"></div>
+
+            <div class="grafico2"></div>
+            <div class="verde"></div>
+            <div class="avaliacoes"></div>
+    </div>
+
+
+
+
+</body>
+</html>
