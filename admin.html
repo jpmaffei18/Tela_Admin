@@ -11,48 +11,118 @@ body{
     margin:0;
 }
 
+.header{
+    background-color: #2B571A;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+.header img{
+    width:95px;
+    margin-top:5px;
+    margin-left: 47%;
+    background-color: #7B9A6E;
+    padding:7px;
+    border-radius: 15px;
+}
+
 .conteudo{
     background-color: white;
-    box-shadow: inset 0 0 3px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 3px 3px #2a302f;
     margin: auto;
     margin-top: 100px; 
+    margin-bottom: 100px;
     padding: 10px;
     border-radius: 15px;
-    width: 1000px;
-    height: 750px;
+    width: 1002px;
+    height: 730px;
+    font-family: sans-serif;
     
 
 }
 
+ion-button {
+    cursor: pointer;
+    
+}
+
+ion-button{
+    display: block;
+    position: relative;
+    color: #7B9A6E;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: "Open Sans", Sans-serif;
+    font-weight: 00;
+    transition: .4s;
+    margin-bottom: 0;
+    margin-left: 20px;
+    
+}  
+
+ion-button:hover {
+        color: #7B9A6E;
+    }
+
+
+ion-button::before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        width: 0;
+        right: 90px;
+        bottom: 0;
+        height: 5px;
+        background: #2B571A;
+        transition: width .2s;
+
+    }
+    
+
+ion-button:hover::before {
+        width: 120px;
+    }
+
+
 
 .amarelo{
-border: solid 4px yellow;
+border: solid 4px #2B571A;
+border-top: solid 7px #2B571A;
+border-left: solid 7px #2B571A;
+border-bottom: solid 7px #2B571A;
 box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.2);
 border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
 width: 230px;
-height: 740px;
+height: 716px;
 float: left;
+color: #7B9A6E;
 }
 
 .amarelo h2{
+
     text-align: center;
 }
 
 .amarelo p{
+    color: #7B9A6E;
     margin-bottom: 0;
     margin-left: 20px;
 }
 
 .vermelho{
-border: solid 4px red;
+border: solid 4px #2B571A;
+border-top: solid 7px #2B571A;
+border-right: solid 7px #2B571A;
 border-top-right-radius: 15px;
 box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.2);
 width: 700px;
 height: 200px;
 padding-left: 50px;
 text-align: center;
-float: right;
-margin-bottom: 10px;
+float: left;
+color: #7B9A6E;
 }
 
 .vermelho h2{
@@ -61,20 +131,22 @@ margin-bottom: 10px;
 
 .clientes{
     float: left;
-    border: solid 4px pink;
+    border: solid 4px #2B571A;;
     width:170px;
     margin-left: 10px;
     margin-right:5%;
+    
 }
 
+.clientes p{
+    font-size: 15px;
+}
 
 .grafico1{
-    width: 430px;
-    border: solid 4px orange;
+    width: 442px;
+    border: solid 4px #2B571A;;
     box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.2);
     height:250px;
-    margin-left: 5px;
-    margin-right: 10px;
     float: left;
     background-image: url(Grafico-de-variacao.png);
     background-size:cover;
@@ -82,7 +154,8 @@ margin-bottom: 10px;
 
 .grafico2{
     width: 300px;
-    border: solid 4px purple;
+    border: solid 4px #2B571A;
+    border-right: solid 7px #2B571A;
     box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.2);
     height:250px;
     float: left;
@@ -91,55 +164,219 @@ margin-bottom: 10px;
 }
 
 .verde{
-    width: 430px;
-    border: solid 4px greenyellow;
+    width: 442px;
+    border: solid 4px #2B571A;
+    border-bottom: solid 7px #2B571A;
     box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.2);
     height:250px;
-    margin-left: 5px;
-    margin-right: 10px;
-    margin-top:10px;
+    float: left;
+    color: #7B9A6E;
+}
+
+.verde h3{
+    margin-left: 10px;
+
+}
+
+
+/*---------------------Clientes------------------------*/
+
+/*--------Cliente1----------*/
+
+.cliente1{
+    margin-left: 40px;
+    border: solid 2px #2B571A;
+    border-radius: 5px;
+    width: 150px;
+    height: auto;
+    padding-left: 5px;
     float: left;
 }
 
+.cliente1 h4{
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+.cliente1 p{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.alterar {
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.excluir{}
+
+
+
+/*--------Cliente2----------*/
+
+.cliente2{
+    margin-right: 40px;
+    border: solid 2px #2B571A;;
+    border-radius: 5px;
+    width: 150px;
+    height: auto;
+    padding-left: 5px;
+    float: right;
+    
+}
+
+.cliente2 h4{
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+.cliente2 p{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+/*--------Cliente3----------*/
+
+.cliente3{
+    margin-left: 40px;
+    margin-top:15px;
+    border: solid 2px #2B571A;;
+    border-radius: 5px;
+    width: 150px;
+    height: auto;
+    padding-left: 5px;
+    float: left;
+}
+
+.cliente3 h4{
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+.cliente3 p{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+/*--------Cliente4----------*/
+
+.cliente4{
+    margin-right: 40px;
+    margin-top: 15px;
+    border: solid 2px #2B571A;
+    border-radius: 5px;
+    width: 150px;
+    height: auto;
+    padding-left: 5px;
+    float: right;
+    
+    
+}
+
+.cliente4 h4{
+    margin-top: 2px;
+    margin-bottom: 0;
+}
+.cliente4 p{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.verde button{
+    border:solid 2px #2B571A;
+    border-radius: 10px;
+    color: #7B9A6E;
+
+}
+
+
+/*--------------------FIM_Clientes------------------------*/
+
 .avaliacoes{
     width: 300px;
-    border: solid 4px purple;
+    border: solid 4px #2B571A;
+    border-bottom: solid 7px #2B571A;
+    border-right: solid 7px #2B571A;
+    border-bottom-right-radius: 15px;
     box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.2);
     height:250px;
     float: left;
     background-image: url(avaliacoes.jpg);
     background-size: cover;
-    margin-top: 10px;
+    
 }
+
+
 
 </style>
 <body>
+    <div class="header"><img src="coopere.png"></div>
+
     <div class="conteudo">
         <div class="amarelo">
             <h2>Menu</h2>
-            <p>Home</p>
-            <p> Lista de Clientes </p>
-            <p> Dados </p>
-            <p>Sair</p>
+                <br>
+                <ion-button fill="clear" style="color: #7B9A6E; font-size: 15px; " [routerLink]="['/Home']">Home</ion-button>
+                <br>
+                <ion-button fill="clear" style="color: #7B9A6E; font-size: 15px;" [routerLink]="['/ListadeClientes']">Lista de Clientes</ion-button>
+                <br>
+                <ion-button fill="clear" style="color: #7B9A6E; font-size: 15px; " [routerLink]="['/Dados']">Dados</ion-button>
+                <br>
+                <ion-button fill="clear" style="color: #7B9A6E; font-size: 15px; " [routerLink]="['/Sair']">Sair</ion-button>
         </div>
 
         <div class="vermelho">
             <h2>CLIENTES</h2>
+            <br>
             <div class="clientes">
-            <p> Clientes Cadastrados</p>
+            <h5> Clientes Cadastrados</h5>
+            <p> 60mil + </p>
             </div>
             <div class="clientes">
-            <p> Clientes Ativos</p>
+            <h5> Clientes Ativos</h5>
+            <p> 40mil + </p>
             </div>
             <div class="clientes">
-            <p> Clientes Não Ativos</p>
+            <h5> Clientes Não Ativos</h5>
+            <p> 19mil + </p>
             </div>
         </div>
         
             <div class="grafico1"></div>
 
             <div class="grafico2"></div>
-            <div class="verde"></div>
+            
+            <div class="verde"> 
+                <h3> CLIENTES CADASTRADOS</h3>
+                <div class="cliente1">
+                    <h4>Cliente 1</h4>
+                    <p>ID do Cliente: 40028922</p>
+                    <button class="alterar">Alterar</button>
+                    <button class="excluir">Excluir</button>
+                </div>
+
+                <div class="cliente2">
+                    <h4>Cliente 2</h4>
+                    <p>ID do Cliente: 40028922</p>
+                    <button class="alterar">Alterar</button>
+                    <button class="excluir">Excluir</button>
+                </div>
+
+                <div class="cliente3">
+                    <h4>Cliente 3</h4>
+                    <p>ID do Cliente: 40028922</p>
+                    <button class="alterar">Alterar</button>
+                    <button class="excluir">Excluir</button>
+                </div>
+
+                <div class="cliente4">
+                    <h4>Cliente 4</h4>
+                    <p>ID do Cliente: 40028922</p>
+                    <button class="alterar">Alterar</button>
+                    <button class="excluir">Excluir</button>
+                </div>
+
+            </div>
             <div class="avaliacoes"></div>
     </div>
 
